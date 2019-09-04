@@ -24,3 +24,5 @@ image: assets/images/ilsan/1.jpg
 ## 아파트 실거래매매 평당가격 증감률 밀도
 ![walking]({{ site.baseurl }}/assets/images/ilsan/4.jpg)
 2019년 상승 지역 : 주교동, 토당동, 사리현동, 신원동, 도내동, 성사동 순으로 상승
+
+![walking]({{ site.baseurl }}/assets/images/southkorea.svg)
