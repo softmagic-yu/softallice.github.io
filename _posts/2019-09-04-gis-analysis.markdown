@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "탐사 기획보도"
-categories: [ Jekyll ]
+categories: [ Analysis ]
 image: assets/images/map.png
 ---
 분석 가능 범위는 취재 방향을 구체화하기 위한 기자님이 원하시는 특정 이슈지역분석,각 도시별 시계열 가격변동률 확인 및 비교분석,신도시 vs 비신도시, 신도시 vs 서울 비교분석
