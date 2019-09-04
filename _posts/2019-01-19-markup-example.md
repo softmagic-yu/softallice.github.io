@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Markdown Example"
-author: jane
-categories: [ Jekyll, tutorial ]
+author: Han
+categories: [ Analysis ]
 image: assets/images/6.jpg
 tags: featured
 ---
