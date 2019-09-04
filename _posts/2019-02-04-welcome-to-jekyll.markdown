@@ -4,9 +4,10 @@ title:  "탐사 기획보도"
 categories: [ Jekyll ]
 image: assets/images/demo1.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+분석 가능 범위는 취재 방향을 구체화하기 위한 기자님이 원하시는 특정 이슈지역분석,각 도시별 시계열 가격변동률 확인 및 비교분석,신도시 vs 비신도시, 신도시 vs 서울 비교분석
+2기 신도시 이후 가격변동률 큰 지역과 작은 지역 발굴, 3기 신도시 발표 후 해당지역 및 인근지역의 가격변동 확인, 매매값 vs 전세값 비교.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+분석 과정은 수도권 약 18,230개의 아파트를 대상으로 약390만건의 아파트실거래매매가격 데이터를 다운로드한다. 다운로드한 데이터는 DB로 업로딩하여 주소정제 및 데이터 클렌징을 통한 분석가능 데이터 형태로 변경한다. 그 뒤 빅데이터분석 및 GIS분석을 진행한다.
 
 Jekyll also offers powerful support for code snippets:
 
