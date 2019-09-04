@@ -2,7 +2,7 @@
 layout: post
 title:  "탐사 기획보도"
 categories: [ Jekyll ]
-image: assets/images/demo1.jpg
+image: assets/images/southkorea.svg
 ---
 분석 가능 범위는 취재 방향을 구체화하기 위한 기자님이 원하시는 특정 이슈지역분석,각 도시별 시계열 가격변동률 확인 및 비교분석,신도시 vs 비신도시, 신도시 vs 서울 비교분석
 2기 신도시 이후 가격변동률 큰 지역과 작은 지역 발굴, 3기 신도시 발표 후 해당지역 및 인근지역의 가격변동 확인, 매매값 vs 전세값 비교.
