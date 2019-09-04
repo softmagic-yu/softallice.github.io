@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "탐사 기획보도"
 categories: [ Jekyll ]
 image: assets/images/demo1.jpg
 ---
