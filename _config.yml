@@ -2,7 +2,7 @@
 name: 'GIS Analysis'
 description: 'GIS 분석을 통한 탐사 보도'
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon-1.ico'
+favicon: 'assets/images/favicon.ico'
 baseurl: '' #'/mundana-theme-jekyll'
 disqus: 'demowebsite'
 email: 'gisland@gmail.com'
