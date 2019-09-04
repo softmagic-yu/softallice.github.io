@@ -22,7 +22,7 @@ authors:
     sal:
       name:           Han
       site:           http://gisland.co.kr
-      avatar:         assets/images/avatar1.jpg
+      avatar:         /assets/images/avatar1.jpg
       bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
       email:          
       twitter:        
@@ -30,7 +30,7 @@ authors:
     jane:
       name:           Jane
       site:           https://www.wowthemes.net
-      avatar:         assets/images/avatar2.jpg
+      avatar:         /assets/images/avatar2.jpg
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          
       twitter:        
