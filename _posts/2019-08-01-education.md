@@ -4,119 +4,45 @@ title:  "Education must also train one for quick, resolute and effective thinkin
 categories: [ Jekyll, tutorial ]
 image: assets/images/ilsan/3.jpg
 ---
+There are lots of powerful things you can do with the Markdown editor
 
-<script src="https://unpkg.com/deck.gl@^7.0.0/dist.min.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
-    
-    <style type="text/css">
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-      }
+If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
 
-      #control-panel {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 12px;
-        padding: 20px;
-        font-size: 12px;
-        line-height: 1.5;
-        z-index: 1;
-        background: #fff;
-        font-family: Helvetica, Arial, sans-serif;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
-      }
+As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.
 
-      label {
-        display: inline-block;
-        width: 140px;
-      }
-    </style>
 
-<div id="control-panel">
-      <div>
-        <label>Radius</label>
-        <input id="radius" type="range" min="1000" max="20000" step="1000" value="1000"></input>
-        <span id="radius-value"></span>
-      </div>
-      <div>
-        <label>Coverage</label>
-        <input id="coverage" type="range" min="0" max="1" step="0.1" value="1"></input>
-        <span id="coverage-value"></span>
-      </div>
-      <div>
-        <label>Upper Percentile</label>
-        <input id="upperPercentile" type="range" min="90" max="100" step="1" value="100"></input>
-        <span id="upperPercentile-value"></span>
-      </div>
-    </div>
-  </body>
+## Special formatting
 
-  <script type="text/javascript">
+As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:
 
-    const {DeckGL, HexagonLayer} = deck;
++ ~~strike through~~
++ ==highlight==
++ \*escaped characters\*
 
-    const deckgl = new DeckGL({
-      mapboxApiAccessToken: 'pk.eyJ1Ijoic29mdG1hZ2ljIiwiYSI6ImNrMGJraGRnbjB2YXUzbnE4bm9ibTFzYm4ifQ.RZfNvqLNr4UbHmcpbzbd_Q',
-      mapStyle: 'mapbox://styles/mapbox/dark-v9',
-      longitude: 128.917883,
-      latitude: 37.783956,
-      zoom: 6,
-      minZoom: 5,
-      maxZoom: 15,
-      pitch: 40.5
-    });
 
-    let data = null;
+## Writing code blocks
 
-    const OPTIONS = ['radius', 'coverage', 'upperPercentile'];
+There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, `like this`. Larger snippets of code can be displayed across multiple lines using triple back ticks:
 
-    const COLOR_RANGE = [
-      [1, 152, 189],
-      [73, 227, 206],
-      [216, 254, 181],
-      [254, 237, 177],
-      [254, 173, 84],
-      [209, 55, 78]
-    ];
+```
+.my-link {
+    text-decoration: underline;
+}
+```
 
-    OPTIONS.forEach(key => {
-      document.getElementById(key).oninput = renderLayer;
-    });
+If you want to get really fancy, you can even add syntax highlighting using Rouge.
 
-    function renderLayer () {
-      const options = {};
-      OPTIONS.forEach(key => {
-        const value = document.getElementById(key).value;
-        document.getElementById(key + '-value').innerHTML = value;
-        options[key] = Number(value);
-      });
 
-      const hexagonLayer = new HexagonLayer({
-        id: 'heatmap',
-        colorRange: COLOR_RANGE,
-        data,
-        elevationRange: [0, 1000],
-        elevationScale: 250,
-        extruded: true,
-        getPosition: d => d,
-        opacity: 1,
-        ...options
-      });
+![walking]({{ site.baseurl }}/assets/images/8.jpg)
 
-      deckgl.setProps({
-        layers: [hexagonLayer]
-      });
-    }
+## Reference lists
 
-    d3.csv('https://raw.githubusercontent.com/softallice/softallice.github.io/master/data/seoul-heatmap-data-kang.csv')
-      .then(response => {
-      data = response.map(d => [Number(d.lng), Number(d.lat)]);
-      renderLayer();
-    });
+The quick brown jumped over the lazy.
 
-  </script>
+Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
+
+## Full HTML
+
+Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
+
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
