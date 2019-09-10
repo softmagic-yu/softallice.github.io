@@ -4,8 +4,7 @@ title:  "Education must also train one for quick, resolute and effective thinkin
 categories: [ Jekyll, tutorial ]
 image: assets/images/ilsan/3.jpg
 ---
-샘플
-<p><a href="{{site.baseurl}}/_map/map-1.html</a></p>
+
 
 There are lots of powerful things you can do with the Markdown editor
 
