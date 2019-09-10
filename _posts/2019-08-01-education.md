@@ -49,4 +49,4 @@ Perhaps the best part of Markdown is that you're never limited to just Markdown.
 
 <p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
 
-<p><iframe style="width:100%;" height="500" src="https://github.com/softallice/gisdata/blob/master/index.html" frameborder="0"></iframe></p>
+<p><iframe style="width:100%;" height="500" src="https://github.com/softallice/gisdata" frameborder="0"></iframe></p>
