@@ -5,11 +5,7 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/ilsan/3.jpg
 ---
 
-![walking]({{ site.baseurl }}/data/map.html)
-
-{% link {{ site.baseurl }}/data/map.html %}
-
-[Link to a page]({% link data/map.html %})
+<p><iframe style="width:100%;" height="500" src="https://github.com/softallice/softallice.github.io/blob/master/_map/map-1.html" frameborder="0"></iframe></p>
 
 There are lots of powerful things you can do with the Markdown editor
 
