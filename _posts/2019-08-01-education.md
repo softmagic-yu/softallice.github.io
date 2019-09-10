@@ -5,7 +5,7 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/ilsan/3.jpg
 ---
 
-<p><iframe style="width:100%;" height="500" src="https://github.com/softallice/softallice.github.io/blob/master/_map/map-1.html" frameborder="0"></iframe></p>
+<a href="{{site.baseurl}}/_map/map-1.html</a>
 
 There are lots of powerful things you can do with the Markdown editor
 
