@@ -1,5 +1,3 @@
-// 20200814145825
-// https://trustbloc.github.io/context/vc/examples-ext-v1.jsonld
 {
     "@context": {
         "@version": 1.1,
