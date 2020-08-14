@@ -1,48 +1,71 @@
 {
-    "@context": {
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "ex": "https://example.org/examples#",
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
+    "hetc": "https://w3c-ccg.github.io/vc-json-schemas/example/cmtr/v0.2/cmtr-v0.2#",
+    "MyData": {
+      "@id": "ex:MyData",
+      "@context": {
         "@version": 1.1,
+        "@protected": true,
         "id": "@id",
         "type": "@type",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "ex": "https://example.org/examples#",
-        "name": "http://schema.org/name",
-        "description": "http://schema.org/description",
-        "image": {
-            "@id": "http://schema.org/image",
-            "@type": "@id"
+        "name": {
+          "@id": "ex:name",
+          "@type": "xsd:string"
         },
-        "hetc": "https://w3c-ccg.github.io/vc-json-schemas/example/cmtr/v0.2/cmtr-v0.2#",
-        "MyData": {
-            "@id": "ex:MyData",
-            "@context": {
-                "@version": 1.1,
-                "@protected": true,
-                "id": "@id",
-                "type": "@type",
-                "xsd": "http://www.w3.org/2001/XMLSchema#",
-                "ex": "https://example.org/examples#",
-                "name": "http://schema.org/name",
-                "description": "http://schema.org/description",
-                "dtorti": {
-                    "@id": "ex:dtorti",
-                    "@type": "xsd:string"
-                },
-                "email": {
-                    "@id": "ex:email",
-                    "@type": "xsd:string"
-                },
-                "sex": {
-                    "@id": "ex:sex",
-                    "@type": "xsd:string"
-                },
-                "expireddate": {
-                    "@id": "ex:expireddate",
-                    "@type": "xsd:string"
-                },
-                "birthdate": {
-                    "@id": "ex:birthdate",
-                    "@type": "xsd:string"
-                }
-            }
+        "description": "http://schema.org/description",
+        "phone": {
+            "@id": "ex:phone",
+            "@type": "xsd:string"
+        },
+        "mobile": {
+            "@id": "ex:mobile",
+            "@type": "xsd:string"
+        },
+        "personalemail": {
+            "@id": "ex:email",
+            "@type": "xsd:string"
+        },
+        "companyemail": {
+            "@id": "ex:email",
+            "@type": "xsd:string"
+        },
+        "address": {
+            "@id": "ex:adress",
+            "@type": "xsd:string"
+        },
+        "level": {
+            "@id": "ex:level",
+            "@type": "xsd:string"
+        },
+        "companyid": {
+            "@id": "ex:id",
+            "@type": "xsd:string"
+        },
+        "issuetype": {
+            "@id": "ex:type",
+            "@type": "xsd:string"
+        },
+        "company": {
+            "@id": "ex:companyname",
+            "@type": "xsd:string"
+        },
+        "website": {
+            "@id": "ex:website",
+            "@type": "xsd:string"
         }
+      }
     }
+  }
 }
